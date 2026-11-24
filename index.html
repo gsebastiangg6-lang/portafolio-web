@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Sebastián Panche, Analista de Datos Junior y Desarrollador Web especializado en Power BI, SQL, BigQuery, Python, HTML, CSS y JavaScript.">
+  <title>Sebastián Panche | Analista de Datos Junior & Desarrollador Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- ==================== HEADER Y NAVEGACIÓN ==================== -->
+  <header class="site-header" id="inicio">
+    <div class="container header-container">
+      <a href="#inicio" class="brand" aria-label="Inicio - Sebastián Panche">
+        <span class="brand-mark" aria-hidden="true">SP</span>
+        <span class="brand-name">Sebastián Panche</span>
+      </a>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span class="menu-toggle-bar" aria-hidden="true"></span>
+        <span class="menu-toggle-bar" aria-hidden="true"></span>
+        <span class="menu-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#certificaciones" class="nav-link">Certificaciones</a></li>
+          <li><a href="#contacto" class="nav-link nav-cta">Contactar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <p class="availability-badge">
+          <span class="status-dot" aria-hidden="true"></span>
+          Disponible para roles Junior Data Analyst &amp; Frontend Web
+        </p>
+
+        <h1 id="hero-title">
+          Transformo datos en decisiones claras y construyo interfaces web funcionales.
+        </h1>
+
+        <p class="hero-description">
+          Soy <strong>Sebastián Panche</strong>, Analista de Datos Junior y Desarrollador Web en Boyacá, Colombia. Combino análisis en <strong>SQL, BigQuery, Power BI y Python</strong> con desarrollo frontend limpio en <strong>HTML5, CSS3 y JavaScript</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SOBRE MÍ Y STACK ==================== -->
+    <section class="section section-alt" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="sobre-mi-title">Sobre mí</h2>
+          <p class="section-intro">
+            Perfil orientado a resultados, precisión analítica y soluciones prácticas.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-bio">
+            <p>
+              Cuento con experiencia práctica de <strong>1 año gestionando registros clínicos RIPS y control administrativo de datos en Microsoft Excel</strong> en el Consultorio Médico Dr. Omar Panche, donde fortalecí la validación de información, la limpieza de bases de datos y la organización operativa.
+            </p>
+            <p>
+              Actualmente complemento mi formación en desarrollo de software y analítica avanzada preparando la certificación <strong>Microsoft PL-300 (Power BI)</strong>, construyendo tableros ejecutivos y aplicaciones web responsivas pensadas para usuarios reales.
+            </p>
+          </div>
+
+          <div class="stack-panel" aria-label="Stack tecnológico">
+            <div class="stack-group">
+              <h3>Datos &amp; Business Intelligence</h3>
+              <ul class="tag-list">
+                <li class="tag">Power BI</li>
+                <li class="tag">SQL / BigQuery</li>
+                <li class="tag">Microsoft Excel</li>
+                <li class="tag">Python</li>
+                <li class="tag">RStudio</li>
+              </ul>
+            </div>
+
+            <div class="stack-group">
+              <h3>Desarrollo Web</h3>
+              <ul class="tag-list">
+                <li class="tag">HTML5 Semántico</li>
+                <li class="tag">CSS3 / Grid / Flexbox</li>
+                <li class="tag">JavaScript Vanilla</li>
+                <li class="tag">Diseño Mobile-First</li>
+              </ul>
+            </div>
+
+            <div class="stack-group">
+              <h3>Herramientas &amp; Flujo</h3>
+              <ul class="tag-list">
+                <li class="tag">Git &amp; GitHub</li>
+                <li class="tag">VS Code</li>
+                <li class="tag">Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROYECTOS DESTACADOS ==================== -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="proyectos-title">Proyectos destacados</h2>
+          <p class="section-intro">
+            Casos prácticos que combinan análisis de negocio, automatización y desarrollo web.
+          </p>
+        </header>
+
+        <div class="filter-bar" role="group" aria-label="Filtrar proyectos por categoría">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">
+            Todos
+          </button>
+          <button type="button" class="filter-btn" data-filter="data" aria-pressed="false">
+            Datos &amp; BI
+          </button>
+          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">
+            Desarrollo Web
+          </button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card" data-category="data">
+            <div class="project-meta">
+              <span class="project-category">Datos &amp; BI</span>
+            </div>
+            <h3>Análisis de Rentabilidad y Expansión Clínica</h3>
+            <p class="project-summary">
+              Modelado de datos médicos sintéticos (Synthea) para evaluar márgenes, demanda y viabilidad de expansión en servicios de nutrición y manejo del dolor.
+            </p>
+            <ul class="tag-list" aria-label="Tecnologías usadas">
+              <li class="tag">BigQuery SQL</li>
+              <li class="tag">Power BI</li>
+              <li class="tag">Excel</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/gsebastiangg6-lang/portfolio-clinica-integrativa.git" target="_blank" rel="noopener noreferrer" class="text-link">
+                Ver repositorio en GitHub &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="data">
+            <div class="project-meta">
+              <span class="project-category">Datos &amp; Python</span>
+            </div>
+            <h3>Sistema de Préstamo de Herramientas</h3>
+            <p class="project-summary">
+              Aplicación en Python para control de inventario, registro de préstamos, devoluciones y trazabilidad operativa con persistencia estructurada.
+            </p>
+            <ul class="tag-list" aria-label="Tecnologías usadas">
+              <li class="tag">Python</li>
+              <li class="tag">Lógica de negocio</li>
+              <li class="tag">Git</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/gsebastiangg6-lang" target="_blank" rel="noopener noreferrer" class="text-link">
+                Ver repositorio en GitHub &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-meta">
+              <span class="project-category">Desarrollo Web</span>
+            </div>
+            <h3>Sitio Web Consultorio Médico Dr. Omar Panche</h3>
+            <p class="project-summary">
+              Landing page mobile-first para consultorio de medicina integrativa con arquitectura semántica, preguntas frecuentes y formulario de citas validado.
+            </p>
+            <ul class="tag-list" aria-label="Tecnologías usadas">
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+              <li class="tag">JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/gsebastiangg6-lang/Pagina_web_IA.git" target="_blank" rel="noopener noreferrer" class="text-link">
+                Ver repositorio en GitHub &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-meta">
+              <span class="project-category">Desarrollo Web</span>
+            </div>
+            <h3>Gestor de Tareas Interactivo</h3>
+            <p class="project-summary">
+              Interfaz web ligera para crear, organizar y hacer seguimiento de tareas diarias con manipulación dinámica del DOM sin librerías externas.
+            </p>
+            <ul class="tag-list" aria-label="Tecnologías usadas">
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+              <li class="tag">JavaScript Vanilla</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/gsebastiangg6-lang/ProyectoTareas_JavaScript_Dainer_Pereira.git" target="_blank" rel="noopener noreferrer" class="text-link">
+                Ver repositorio en GitHub &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICACIONES ==================== -->
+    <section class="section section-alt" id="certificaciones" aria-labelledby="certificaciones-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="certificaciones-title">Certificaciones y formación</h2>
+          <p class="section-intro">
+            Credenciales verificables enfocadas en analítica de datos, inteligencia artificial y BI.
+          </p>
+        </header>
+
+        <div class="certs-grid">
+          <article class="cert-card">
+            <span class="cert-year">2026</span>
+            <h3>Google Data Analytics Professional Certificate</h3>
+            <p class="cert-issuer">Google &middot; Coursera</p>
+          </article>
+
+          <article class="cert-card">
+            <span class="cert-year">2026</span>
+            <h3>Google AI Essentials</h3>
+            <p class="cert-issuer">Google &middot; Coursera</p>
+          </article>
+
+          <article class="cert-card">
+            <span class="cert-year cert-progress">En curso &middot; 2026</span>
+            <h3>Microsoft Power BI Data Analyst (PL-300)</h3>
+            <p class="cert-issuer">Microsoft &middot; Coursera</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FORMULARIO DE CONTACTO ==================== -->
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="contacto-title">Contacto para reclutadores</h2>
+          <p class="section-intro">
+            ¿Buscas un Analista de Datos Junior o Desarrollador Web? Escríbeme y responderé a la brevedad.
+          </p>
+        </header>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre completo <span class="required" aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej. Laura Martínez"
+              autocomplete="name"
+              required
+            >
+            <span class="error-message" id="error-nombre" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo electrónico <span class="required" aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="Ej. laura@empresa.com"
+              autocomplete="email"
+              required
+            >
+            <span class="error-message" id="error-correo" role="alert"></span>
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="asunto">Empresa o asunto <span class="required" aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              placeholder="Ej. Vacante Junior Data Analyst - Empresa Tech"
+              required
+            >
+            <span class="error-message" id="error-asunto" role="alert"></span>
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="mensaje">Mensaje <span class="required" aria-hidden="true">*</span></label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Cuéntame sobre la vacante, el equipo o el proyecto..."
+              required
+            ></textarea>
+            <span class="error-message" id="error-mensaje" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+
+          <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p class="footer-copy">&copy; 2026 Sebastián Panche &middot; Boyacá, Colombia.</p>
+      <ul class="footer-links" aria-label="Enlaces profesionales">
+        <li>
+          <a href="https://www.linkedin.com/in/sebastian-panche-data" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/gsebastiangg6-lang" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="mailto:gsebastiangg6@gmail.com">Correo</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
